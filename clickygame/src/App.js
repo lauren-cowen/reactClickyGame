@@ -14,6 +14,9 @@ class App extends Component {
 clickCard = id => {
   cards[id].clicked = true;
   this.setState({cards});
+  //logic that compares the cards already clicked on to the card that is currently selected
+  //if the card has not been clicked, the cards are reshuffled
+  //if the card has been clicked the game restarts and the cards are reshuffled
 }
 
 render() {
